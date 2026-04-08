@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">Chic Happens - Fashion Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+  <img src="assets/images/logo.png" alt="Chic Happens Logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="collections.html" data-i18n="nav.collections">Collections</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+        <li><a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <select id="langSwitcher">
+      <option value="en">EN</option>
+      <option value="uk">UK</option>
+    </select>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="image-tooltip-container">
+    <img src="assets/images/en/hero.jpg" data-i18n-img="hero.img" alt="Feel the Summer Breeze" alt-key="hero.title">
+    <div class="tooltip-text" data-i18n="hero.title">Feel the Summer Breeze</div>
+  </div>
+  <div class="hero-text">
+    <h1 data-i18n="hero.title">Feel the Summer Breeze</h1>
+    <p data-i18n="hero.subtitle">Catch the latest trends before they vanish like sand through your fingers</p>
+    <a href="collections.html" class="cta-btn" data-i18n="hero.cta">Explore Collection</a>
+  </div>
+</section>
+
+<!-- Featured Products -->
+<section class="featured">
+  <h2 data-i18n="home.featured">Featured Collections</h2>
+
+  <div class="product-grid">
+    
+    <div class="product-card">
+      <div class="image-tooltip-container">
+        <img 
+          src="assets/images/en/product1.jpg"
+          data-i18n-img="product1.img"
+          alt="Sunset Dress"
+          alt-key="product1.name"
+        >
+        <div class="tooltip-text" data-i18n="product1.name">
+          Sunset Dress
+        </div>
+      </div>
+
+      <h3 data-i18n="product1.name">Sunset Dress</h3>
+
+      <p data-i18n="product1.desc">
+        Turn heads with this dazzling dress — perfect for the beach or a night out
+      </p>
+
+      <p class="price" data-i18n="product1.price">$120</p>
+
+      <p class="sizes" data-i18n="product1.sizes">
+        Sizes: S, M, L, XL
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+  <h2 data-i18n="newsletter.title">Stay in the Loop</h2>
+  <p data-i18n="newsletter.subtitle">Sign up for exclusive drops and insider tips — don’t miss the boat!</p>
+  <form>
+    <input type="email" placeholder="Your email">
+    <button type="submit" data-i18n="newsletter.cta">Subscribe</button>
+  </form>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

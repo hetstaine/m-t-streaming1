@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="Chic Happens Logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="collections.html" data-i18n="nav.collections">Collections</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+        <li><a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <select id="langSwitcher">
+      <option value="en">EN</option>
+      <option value="uk">UK</option>
+    </select>
+  </div>
+</header>
+
+<section class="contact container">
+  <h2 data-i18n="contact.title">Get in Touch</h2>
+  <p class="contact-intro" data-i18n="contact.text">
+    Have questions, suggestions, or want to collaborate? We’d love to hear from you!
+  </p>
+
+  <div class="contact-layout">
+
+    <!-- Form -->
+    <form class="contact-form" action="contact-handler.php" method="POST">
+      <div class="form-group">
+        <label for="name" data-i18n="contact.nameLabel">Your Name</label>
+        <input id="name" name="name" type="text" required placeholder="John Doe"
+               data-i18n-placeholder="contact.name">
+      </div>
+
+      <div class="form-group">
+        <label for="email" data-i18n="contact.emailLabel">Email Address</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com"
+               data-i18n-placeholder="contact.email">
+      </div>
+
+      <div class="form-group">
+        <label for="message" data-i18n="contact.messageLabel">Message</label>
+        <textarea id="message" name="message" rows="6" required
+                  placeholder="Your message..." data-i18n-placeholder="contact.message"></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary" data-i18n="contact.cta">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <aside class="contact-details">
+      <div class="info-block">
+        <h3 data-i18n="contact.follow">Stay Connected</h3>
+        <div class="social-links">
+          <div class="social-links">
+          <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="assets/icons/instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://youtu.be/Sagg08DrO5U" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="assets/icons/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://e-learning.lnu.edu.ua/course/view.php?id=3812" target="_blank" rel="noopener" aria-label="TikTok">
+            <img src="assets/icons/tiktok.svg" alt="TikTok">
+          </a>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <h3 data-i18n="contact.emailLabel">Email</h3>
+        <p>hello@chichappens.com</p>
+      </div>
+
+      <div class="info-block">
+        <h3 data-i18n="contact.phoneLabel">Phone</h3>
+        <p>+1 (555) 123-4567</p>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
