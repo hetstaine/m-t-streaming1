@@ -40,6 +40,13 @@ async function localizePage(lang) {
     const key = img.getAttribute('alt-key');
     if (translations[key]) img.alt = translations[key];
   });
+  // CONTACT LOCALIZATION
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[key]) {
+      el.placeholder = translations[key];
+    }
+  });
 }
 
 // Fun confetti function
