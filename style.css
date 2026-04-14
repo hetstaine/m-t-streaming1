@@ -348,6 +348,7 @@ body {
 .contact-details .social-links a img {
   width: 32px;
   height: 32px;
+  filter: invert(1);
   object-fit: contain;
   transition: transform 0.3s ease;
 }
